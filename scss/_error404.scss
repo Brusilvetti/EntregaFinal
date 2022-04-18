@@ -1,0 +1,44 @@
+.errorImg{
+	display: block;
+	margin: auto;
+	margin-top: 1rem;
+	height: 17rem;
+}
+
+.textError{
+	text-align: center;
+	margin: 0.5rem;
+	h1{
+		font-family: $Font3;
+		color: map-get($map:$colores,$key:'cinco');
+		margin-bottom: 1rem;
+	}
+	h2{
+		font-family: $Font2;
+		font-size: $FontS2;
+		color: map-get($map:$colores,$key:'ocho');
+		margin-bottom: 1rem;
+	}
+	h3 a{
+		text-decoration: none;
+		font-family: $Font1;
+		text-transform: uppercase;
+		color: map-get($map:$colores,$key:'cuatro');
+		border:solid map-get($map:$colores,$key:'dos') 3px;
+		padding: 0.3rem;
+		margin-bottom: 1rem;
+		&:hover{
+			color: map-get($map:$colores,$key:'cinco');
+		}  ;
+	}
+}
+
+#pie{
+	margin-top: 1.3rem;
+}
+
+@media (min-width: 380px){
+	.errorImg{
+		height:22rem
+}
+}

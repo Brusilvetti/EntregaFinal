@@ -1,0 +1,59 @@
+.reservas__grid{
+	display: grid;
+	width: $WidthT;
+	grid-template-columns:auto;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"reservasinfo"
+	"reservas"
+	"aside"
+}
+#aside{
+	display: none;
+}
+#reservasinfo{
+	grid-area: reservasinfo;
+}
+
+#reservas{
+	grid-area: reservas;
+}
+#aside{
+	grid-area: aside;
+}
+
+#reservas{
+	color: map-get($map:$colores,$key:'seis');
+	background-color: map-get($map:$colores,$key:'tres');
+	margin: 0.5rem;
+	padding: 0.5rem;
+	@include display-nowrap;
+}
+
+fieldset{
+	padding: 0.3rem;
+	margin: 0.5rem;
+}
+input{
+	margin-bottom: 0.1rem;
+}
+
+.btn_contacto{
+	color: map-get($map:$colores,$key:'seis');
+}
+
+@media (min-width: 1024px){
+
+.reservas__grid{
+	display: grid;
+	width: 99%;
+	grid-template-columns: 80vw 20vw;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"reservasinfo aside"
+	"reservas aside"
+  }
+#aside{
+	display: inline-block;
+}
+}

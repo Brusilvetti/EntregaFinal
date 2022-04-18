@@ -1,0 +1,14 @@
+.figure__titulo{
+	font-size:$FontS2;
+	font-weight: 400;
+	color: map-get($map:$colores,$key:'seis');
+	text-align: center
+}
+
+.figure__datos{
+	font-size: $FontS1;
+	color: map-get($map:$colores,$key:'ocho');
+	padding: 0.3rem;
+	margin: 0.3rem 0.3rem;
+	text-align: center;
+}

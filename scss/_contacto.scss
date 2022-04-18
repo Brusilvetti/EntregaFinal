@@ -1,0 +1,88 @@
+.container__info--flex{
+	@include display-wrap;
+}
+
+.container__contacto--flex{
+	@include display-nowrap;
+	width: 80%;
+}
+.div-rosa{
+	border:map-get($map:$colores,$key:'dos') double 2px;
+	width: $WidthT;
+}
+
+.form__contacto{
+	@include display-nowrap;
+	width: $WidthT;
+	background-color: map-get($map:$colores,$key:'tres');
+	border: double 2px rgba(270, 270, 270, 0.2);
+}
+
+input{
+	width: $WidthT;
+	height: 2rem;
+}
+#dia,#mensaje{
+	@extend input;
+}
+
+#btn{
+	width: $Width30/2;
+}
+
+form div label {
+	font-family: $Font1;
+	font-size: $FontS1+0.3rem;
+	font-weight: 400;
+	margin-top: 1rem;
+	margin-bottom: 0.3rem;
+	color: map-get($map:$colores,$key:'seis');
+}
+
+.info__text--style{
+	font-family: $Font1;
+	font-size: $FontS1+0.3rem;
+	font-weight: 400;
+	color: map-get($map:$colores,$key:'ocho');
+	margin: 10px ;
+}
+.img__separador{
+	width: 5rem;
+}
+
+@each $icono in facebook, twitter, instagram{
+	.#{$icono}-icon{
+		background-image:url(../img/#{$icono}.png);
+		width: $FontS2;
+		height: $FontS2;
+		background-size:100%;
+		list-style: none;
+	}
+}
+
+.img__contacto{
+	width:$WidthT;
+}
+.form__contacto{
+	width: $WidthT;
+}
+
+iframe{
+	width: $WidthT;
+}
+
+form.form__contacto{
+	padding: 0.3rem;
+	margin: 0.5rem;
+}
+
+@media (min-width: 768px){
+
+iframe{
+	width: $Width30;
+}
+input{
+	width: $Width30;
+	height: 2rem;
+}
+}

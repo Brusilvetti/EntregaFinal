@@ -1,0 +1,111 @@
+.grid-menu{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 0.2rem;
+	grid-template-areas: 
+	"salado" "salados" "dulce" "dulces"
+	"torta" "tortas" "especial"
+	"especiales" "cafe" "cafes" 
+	"bebida" "bebidas"
+}
+
+#salado{
+	grid-area: salado;
+}
+#dulce{
+	grid-area: dulce;
+}
+#salados{
+	grid-area: salados;
+}
+#dulces{
+	grid-area: dulces;
+}
+#torta{
+	grid-area: torta;
+}
+#bebida{
+	grid-area: bebida;
+}
+#tortas{
+	grid-area: tortas;
+}
+#bebidas{
+	grid-area: bebidas;
+}
+#cafe{
+	grid-area: cafe;
+}
+#especial{
+	grid-area: especial;
+}
+#cafes{
+	grid-area: cafes;
+}
+#especiales{
+	grid-area: especiales;
+}
+
+.menu__titulos--style{
+	color: map-get($map:$colores,$key:'seis');
+	font-family: $Font1 ;
+	font-size: $FontS2 ;
+	font-weight: 600;
+	padding: 0rem;
+	margin-top: 0.5rem;
+	text-align: center;
+}
+
+.menu__items--style{
+	color: black ;
+	font-size: $FontS1 ;
+	font-weight: 300;
+	padding: 0.1rem;
+	margin: 0.1rem;
+	text-align: center;
+}
+
+.grid-menu ul{
+	border: double 2px rgba(270, 270, 270, 0.2);
+
+	li{
+	color: #565B58;
+	font-size: 1.2rem;
+	font-weight: 400;
+	list-style: none;
+	&:before{
+		content: url(../img/menu.png);}
+	&:after{
+		content: url(../img/menu.png);}
+}}
+
+
+@media (min-width: 768px){
+.grid-menu{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 0.2rem;
+	grid-template-areas: 
+	"salado dulce"
+	"salados dulces"
+	"torta especial"
+	"tortas especiales"
+	"cafe bebida"
+	"cafes bebidas"
+}}
+
+@media (min-width: 1024px){
+
+ .grid-menu{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 0.2rem;
+	grid-template-areas: 
+	"salado dulce torta"
+	"salados dulces tortas"
+	"especial cafe bebida"
+	"especiales cafes bebidas"
+}}

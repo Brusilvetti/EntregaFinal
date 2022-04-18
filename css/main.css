@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Josefin+Sans:wght@300;400&family=Jua&family=Rufina:wght@400;700&family=Urbanist:wght@200&display=swap");
+html {
+  font-size: 62,5%; }
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #F5D9C9; }
+
+.textCenter {
+  text-align: center; }
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "botonera" "main" "pie"; }
+
+#botonera {
+  grid-area: botonera; }
+
+#main {
+  grid-area: main; }
+
+#pie {
+  grid-area: pie; }
+
+nav {
+  background-color: #F2CAB3; }
+  nav ul li a {
+    text-decoration: none;
+    color: #5E3116;
+    font-family: 'Jua', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+
+nav a img[src="img/logo.svg"] {
+  width: 10rem; }
+
+nav a img[src="../img/logo.svg"] {
+  width: 10rem; }
+
+.encabezado__box--white {
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  padding-top: 0.3rem;
+  padding-bottom: 0.2rem;
+  margin: 0; }
+
+.BgLight {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.BgRosa, .BgMarron {
+  background-color: #F2CAB3;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 100%; }
+
+.BgMarron {
+  background-color: #A3775C; }
+
+@media (min-width: 435px) {
+  nav a img[src="img/logo.svg"] {
+    width: 13rem; }
+  nav a img[src="../img/logo.svg"] {
+    width: 13rem; } }
+
+.footer__style {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem;
+  position: sticky;
+  padding-top: 0.3rem;
+  margin-top: 0.3rem; }
+
+.main__titulo, .main__titulo a {
+  color: #B38781;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0.5rem; }
+
+.main__titulo a {
+  text-decoration: none;
+  color: #5E3116; }
+  .main__titulo a:hover {
+    color: #B38781; }
+
+.main__img--fluid {
+  width: 100%; }
+
+p {
+  color: #323634;
+  margin: 0.3rem;
+  overflow: hidden; }
+
+.text__index {
+  text-align: center; }
+
+#cont-pre a {
+  font-size: 1.3rem; }
+
+@media (min-width: 768px) {
+  .grid_main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "imgpri imgpri" "nosindex nosindex"  "imgmenu menuindex" "gatindex imggat"  "imgreservas reservasindex" "extraindex extraindex"; }
+  #imgprincipal {
+    grid-area: imgpri; }
+  #nostrosindex {
+    grid-area: nosindex; }
+  #imgmenu {
+    grid-area: imgmenu; }
+  #menuindex {
+    grid-area: menuindex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #imggatitos {
+    grid-area: imggat; }
+  #gatitosindex {
+    grid-area: gatindex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #imgreservas {
+    grid-area: imgreservas; }
+  #reservasindex {
+    grid-area: reservasindex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #cont-pre {
+    grid-area: extraindex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }
+
+.grid-menu {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0.2rem;
+  grid-template-areas: "salado" "salados" "dulce" "dulces" "torta" "tortas" "especial" "especiales" "cafe" "cafes"  "bebida" "bebidas"; }
+
+#salado {
+  grid-area: salado; }
+
+#dulce {
+  grid-area: dulce; }
+
+#salados {
+  grid-area: salados; }
+
+#dulces {
+  grid-area: dulces; }
+
+#torta {
+  grid-area: torta; }
+
+#bebida {
+  grid-area: bebida; }
+
+#tortas {
+  grid-area: tortas; }
+
+#bebidas {
+  grid-area: bebidas; }
+
+#cafe {
+  grid-area: cafe; }
+
+#especial {
+  grid-area: especial; }
+
+#cafes {
+  grid-area: cafes; }
+
+#especiales {
+  grid-area: especiales; }
+
+.menu__titulos--style {
+  color: #323634;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0rem;
+  margin-top: 0.5rem;
+  text-align: center; }
+
+.menu__items--style {
+  color: black;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  text-align: center; }
+
+.grid-menu ul {
+  border: double 2px rgba(255, 255, 255, 0.2); }
+  .grid-menu ul li {
+    color: #565B58;
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style: none; }
+    .grid-menu ul li:before {
+      content: url(../img/menu.png); }
+    .grid-menu ul li:after {
+      content: url(../img/menu.png); }
+
+@media (min-width: 768px) {
+  .grid-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0.2rem;
+    grid-template-areas: "salado dulce" "salados dulces" "torta especial" "tortas especiales" "cafe bebida" "cafes bebidas"; } }
+
+@media (min-width: 1024px) {
+  .grid-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0.2rem;
+    grid-template-areas: "salado dulce torta" "salados dulces tortas" "especial cafe bebida" "especiales cafes bebidas"; } }
+
+.figure__titulo {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #323634;
+  text-align: center; }
+
+.figure__datos {
+  font-size: 1rem;
+  color: #565B58;
+  padding: 0.3rem;
+  margin: 0.3rem 0.3rem;
+  text-align: center; }
+
+.container__info--flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.container__contacto--flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  width: 80%; }
+
+.div-rosa {
+  border: #F2CAB3 double 2px;
+  width: 100%; }
+
+.form__contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: double 2px rgba(255, 255, 255, 0.2); }
+
+input, #dia, #mensaje {
+  width: 100%;
+  height: 2rem; }
+
+#btn {
+  width: 15rem; }
+
+form div label {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #323634; }
+
+.info__text--style {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #565B58;
+  margin: 10px; }
+
+.img__separador {
+  width: 5rem; }
+
+.facebook-icon {
+  background-image: url(../img/facebook.png);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 100%;
+  list-style: none; }
+
+.twitter-icon {
+  background-image: url(../img/twitter.png);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 100%;
+  list-style: none; }
+
+.instagram-icon {
+  background-image: url(../img/instagram.png);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 100%;
+  list-style: none; }
+
+.img__contacto {
+  width: 100%; }
+
+.form__contacto {
+  width: 100%; }
+
+iframe {
+  width: 100%; }
+
+form.form__contacto {
+  padding: 0.3rem;
+  margin: 0.5rem; }
+
+@media (min-width: 768px) {
+  iframe {
+    width: 30rem; }
+  input, #dia, #mensaje {
+    width: 30rem;
+    height: 2rem; } }
+
+.reservas__grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "reservasinfo" "reservas" "aside"; }
+
+#aside {
+  display: none; }
+
+#reservasinfo {
+  grid-area: reservasinfo; }
+
+#reservas {
+  grid-area: reservas; }
+
+#aside {
+  grid-area: aside; }
+
+#reservas {
+  color: #323634;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center; }
+
+fieldset {
+  padding: 0.3rem;
+  margin: 0.5rem; }
+
+input, #dia, #mensaje {
+  margin-bottom: 0.1rem; }
+
+.btn_contacto {
+  color: #323634; }
+
+@media (min-width: 1024px) {
+  .reservas__grid {
+    display: grid;
+    width: 99%;
+    grid-template-columns: 80vw 20vw;
+    grid-template-rows: auto;
+    grid-template-areas: "reservasinfo aside" "reservas aside"; }
+  #aside {
+    display: inline-block; } }
+
+.img__preguntas {
+  width: 25rem;
+  margin: 1.5rem; }
+
+.preguntas__text--style {
+  font-size: 1.2rem;
+  color: #323634;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0.3rem; }
+
+.preguntas__respuesta--style {
+  font-size: 1rem;
+  color: #565B58;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0.5rem; }
+
+@keyframes animatePreguntas {
+  0% {
+    background-image: url(../img/gatin.jpg); }
+  100% {
+    background-image: url(../img/comida.jpg); } }
+
+#imgPre {
+  background-image: url(../img/gatin.jpg);
+  animation-name: animatePreguntas;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  background-size: cover; }
+
+.errorImg {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  height: 17rem; }
+
+.textError {
+  text-align: center;
+  margin: 0.5rem; }
+  .textError h1 {
+    font-family: "Jua", sans-serif;
+    color: #5E3116;
+    margin-bottom: 1rem; }
+  .textError h2 {
+    font-family: "Rufina", serif;
+    font-size: 1.5rem;
+    color: #565B58;
+    margin-bottom: 1rem; }
+  .textError h3 a {
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    color: #B38781;
+    border: solid #F2CAB3 3px;
+    padding: 0.3rem;
+    margin-bottom: 1rem; }
+    .textError h3 a:hover {
+      color: #5E3116; }
+
+#pie {
+  margin-top: 1.3rem; }
+
+@media (min-width: 380px) {
+  .errorImg {
+    height: 22rem; } }

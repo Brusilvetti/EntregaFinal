@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Josefin+Sans:wght@300;400&family=Jua&family=Rufina:wght@400;700&family=Urbanist:wght@200&display=swap');
+
+//nav
+nav{
+	background-color: map-get($map:$colores,$key:'dos');
+
+	ul li a {
+		text-decoration: none;
+	 	color: map-get($map:$colores,$key:'cinco');
+	 	font-family: 'Jua', sans-serif;
+	 	text-transform: uppercase;
+	 	font-size: 1.5rem; 
+	}
+}
+
+nav a img[src="img/logo.svg"]{
+	width: 10rem
+}
+nav a img[src="../img/logo.svg"]{
+	width: 10rem
+}
+
+.encabezado__box--white {
+	text-align: center;
+	width: $WidthT;
+	text-align: center;
+	padding-top: 0.3rem;
+	padding-bottom: 0.2rem;
+	margin: 0;
+ }
+
+ .BgLight{
+ 	background-color: rgba(270, 270, 270, 0.2);
+ 	}
+
+.BgRosa{
+	background-color: map-get($map:$colores,$key:'dos');
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	width: $WidthT;
+}
+
+.BgMarron{
+	@extend .BgRosa;
+	background-color: map-get($map:$colores,$key:'siete');
+}
+
+@media (min-width: 435px){
+	nav a img[src="img/logo.svg"]{
+		width: 13rem
+	}
+	nav a img[src="../img/logo.svg"]{
+		width: 13rem
+	}
+}
+//footer 
+
+.footer__style{
+	width: 100%; 
+	font-size: 1.2rem;
+	font-weight: 300;
+	text-align: center;
+	text-decoration: none; 
+	padding: 0.5rem;
+	position: sticky;
+	padding-top: 0.3rem;
+	margin-top: 0.3rem;
+	}
+
+
+
+	
+	

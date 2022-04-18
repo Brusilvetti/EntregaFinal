@@ -1,0 +1,90 @@
+
+.main__titulo{
+	color: map-get($map:$colores,$key:'cuatro');
+	text-transform: uppercase;
+	text-align: center;
+	font-family: $Font2;
+	font-weight: 700;
+	font-size:$FontS3 ;
+	margin: 0.5rem
+}
+
+.main__titulo a{
+	@extend .main__titulo;
+	text-decoration: none;
+	color: map-get($map:$colores,$key:'cinco');
+	&:hover{
+		color: map-get($map:$colores,$key:'cuatro');
+	}
+}
+
+
+.main__img--fluid{
+	width: 100%;
+}
+
+p {
+	color: map-get($map:$colores,$key:'seis');
+	margin: 0.3rem;
+	overflow: hidden;
+}
+
+.text__index{
+	text-align: center;
+}
+
+#cont-pre a{
+	font-size: 1.3rem;
+}
+
+@media (min-width: 768px){
+.grid_main{
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: auto;
+	grid-template-areas: "imgpri imgpri" "nosindex nosindex" 
+	"imgmenu menuindex" "gatindex imggat" 
+	"imgreservas reservasindex" "extraindex extraindex" 
+}	
+
+
+#imgprincipal{
+	grid-area: imgpri;
+}
+#nostrosindex{
+	grid-area:nosindex ;
+}
+#imgmenu{
+	grid-area: imgmenu;
+}
+#menuindex{
+	grid-area: menuindex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#imggatitos{
+	grid-area: imggat;
+}
+#gatitosindex{
+	grid-area: gatindex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#imgreservas{
+	grid-area: imgreservas;
+}
+#reservasindex{
+	grid-area: reservasindex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#cont-pre{
+	grid-area: extraindex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+}
