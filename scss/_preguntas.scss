@@ -1,7 +1,7 @@
 
 .img__preguntas{
 	width: 25rem;
-	margin: 1.5rem;
+	padding: 0.5rem;
 }
 
 .preguntas__text--style{
@@ -19,16 +19,6 @@
 	margin: 0.5rem;
 }
 
-@keyframes animatePreguntas{
-	0%{background-image: url(../img/gatin.jpg);}
-	100%{background-image: url(../img/comida.jpg);}
-}
-#imgPre{
-	background-image: url(../img/gatin.jpg);
-	animation-name: animatePreguntas;
-	animation-duration: 20s;
-	animation-iteration-count: infinite;
-	animation-delay: 1s;
-	animation-timing-function: ease;
-	background-size: cover;
+.d-flex{
+	@include display-wrap;
 }
